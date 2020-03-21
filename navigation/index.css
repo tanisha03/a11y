@@ -1,0 +1,44 @@
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.menu_item {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 1.5em;
+}
+.submenu {
+  position: absolute;
+  padding: 0;
+  list-style: none;
+  height: 0.5em;
+  width: 0.5em;
+  overflow: hidden;
+  clip: rect(0.5em 0.5em 0.5em 0.5em);
+  clip: rect(0.5em, 0.5em, 0.5em, 0.5em);
+}
+.menu_item:hover .submenu,
+.menu_item.focus .submenu {
+  padding: 0.5em 0;
+  width: 9em;
+  height: auto;
+  background: #111;
+  clip: auto;
+}
+
+/* .menu_item:hover .submenu,
+.menu_item:focus-within .submenu {
+  padding: 0.5em 0;
+  width: 9em;
+  height: auto;
+  background: #111;
+  clip: auto;
+} */
