@@ -35,16 +35,15 @@ document.addEventListener("keydown", function(e) {
   }
   if (e.shiftKey && e.keyCode === 9) {
     ele = document.activeElement.parentElement;
-    console.log(ele);
     if (ele.previousElementSibling !== null) {
-      if (ele.classList.contains("submenu_item")) {
-        console.log(ele.previousElementSibling);
-        ele.previousElementSibling.firstElementChild.blur();
-      } else {
-        console.log("hello");
+      if (ele.classList.contains("menu_item")) {
         ele.classList.remove("focus");
         ele.previousElementSibling.classList.add("focus");
         ele.previousElementSibling.lastElementChild.focus();
+      } else if (ele.classList.contains("submenu_item")) {
+        e.preventDefault();
+        ele.previousElementSibling.firstElementChild.focus();
+        ele.parentElement.parentElement.classList.add("focus");
       }
     }
   }
