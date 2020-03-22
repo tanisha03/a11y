@@ -34,11 +34,11 @@ li a {
   clip: auto;
 }
 
-/* .menu_item:hover .submenu,
+.menu_item:hover .submenu,
 .menu_item:focus-within .submenu {
   padding: 0.5em 0;
   width: 9em;
   height: auto;
   background: #111;
   clip: auto;
-} */
+}
