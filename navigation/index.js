@@ -22,16 +22,12 @@ document.addEventListener("keydown", function(e) {
     r = l.nextElementSibling;
     r.firstElementChild.focus();
     r.classList.add("focus");
-    console.log(r.firstElementChild);
   }
   if (e.keyCode === 37 && l.previousElementSibling !== null) {
-    console.log(l);
     l.classList.remove("focus");
     r = l.previousElementSibling;
-    console.log(r);
     r.firstElementChild.focus();
     r.classList.add("focus");
-    console.log(r.firstElementChild);
   }
   if (e.shiftKey && e.keyCode === 9) {
     ele = document.activeElement.parentElement;
