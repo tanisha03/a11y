@@ -1,0 +1,45 @@
+form {
+  padding: 10%;
+}
+fieldset {
+  border: 0;
+  margin: 20px;
+}
+legend {
+  font-size: 1em;
+  font-weight: 700;
+}
+label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: em;
+}
+label > input[type="text"],
+label > input[type="email"],
+label > textarea,
+select {
+  width: 70%;
+  height: 35px;
+  border: 1px solid #24a0ed;
+  border-radius: 2px;
+  background-color: white;
+}
+label > textarea {
+  height: 100px;
+}
+ul {
+  list-style: none;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin-left: 40px;
+  margin-top: 10px;
+  font-size: 1em;
+}
+button {
+  padding: 10px;
+  font-size: 1.5em;
+  background-color: #24a0ed;
+  border: 0;
+  border-radius: 5px;
+}

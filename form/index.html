@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
     <title>Document</title>
   </head>
   <body>
@@ -12,26 +13,14 @@
 
         <label for="full-name">
           Full Name
-          <span class="required">
-            (required)
-          </span>
-
-          <span class="error-message">
-            You must input a real name.
-          </span>
+          <span class="required"> (required) </span><br />
 
           <input id="full-name" name="full-name" required="" type="text" />
         </label>
 
         <label for="email">
           Email
-          <span class="required">
-            (required)
-          </span>
-
-          <span class="error-message">
-            The email address you entered is not valid.
-          </span>
+          <span class="required"> (required) </span><br />
 
           <input id="email" name="email" required="" type="email" />
         </label>
@@ -43,12 +32,8 @@
         <label for="cc">
           Credit Card Number
           <span class="required">
-            (required)
-          </span>
-
-          <span class="error-message">
-            Your credit card number should be all numbers.
-          </span>
+            (required) </span
+          ><br />
 
           <input
             id="cc"
@@ -69,10 +54,6 @@
             (required)
           </span>
 
-          <span class="error-message">
-            Please give us a little more information about your inquiry.
-          </span>
-
           <textarea id="text-comments" required=""></textarea>
         </label>
       </fieldset>
@@ -86,9 +67,8 @@
         <ul aria-labelledby="legend-1" role="radiogroup">
           <li>
             <label for="yes">
-              <span class="error-message">
-                Please select yes or no.
-              </span>
+              <span class="error-message"> Please select yes or no. </span
+              ><br />
 
               <input
                 id="yes"
@@ -120,8 +100,8 @@
           <li>
             <label for="science">
               <span class="error-message">
-                Please select at least one category.
-              </span>
+                Please select at least one category. </span
+              ><br />
 
               <input
                 id="science"
@@ -165,14 +145,9 @@
 
       <fieldset>
         <label for="options"
-          >Choose from the following:
-          <span class="required">
-            (required)
-          </span>
+          >Choose from the following: <span class="required"> (required) </span
+          ><br />
 
-          <span class="error-message">
-            Please choose one of the following options.
-          </span>
           <select name="options" id="options" required="">
             <option value=""> Select </option>
             <option value="value1">Option A</option>
@@ -182,7 +157,7 @@
         </label>
       </fieldset>
 
-      <button class="form-example-submit" type="submit">Submit Form</button>
+      <button type="submit">Submit Form</button>
     </form>
   </body>
 </html>
