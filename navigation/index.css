@@ -1,3 +1,9 @@
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+}
 .menu {
   list-style-type: none;
   margin: 0;
@@ -14,6 +20,8 @@ li a {
   text-align: center;
   text-decoration: none;
   padding: 1.5em;
+  font-size: 1.2em;
+  font-weight: 700;
 }
 .submenu {
   position: absolute;
@@ -41,4 +49,23 @@ li a {
   height: auto;
   background: #111;
   clip: auto;
+}
+
+/* general styling */
+
+h1 {
+  margin: 200px 0 50px 0;
+  text-align: center;
+}
+
+th {
+  height: 50px;
+  background-color: #111;
+  color: white;
+  font-size: 1.5em;
+}
+
+td {
+  text-align: center;
+  font-size: 1.2em;
 }
