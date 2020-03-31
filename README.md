@@ -10,7 +10,7 @@ Clone the repository in the desired directory using the command
 ```
 git clone https://github.com/tanisha03/a11y.git
 ```
-Just view each of the index.html files in each folders on your local browser to have a look at the accessible UI components. 
+Just view the index.html files in each folders on your local browser to have a look at the accessible UI components. It does not require any local server setup.
 
 ## Contributing
 
